@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="025f12e7-ba5d-4bc2-a15d-7f82b17896b3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cart/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cart/Cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cart/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cart/Item.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Cart/CartTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Cart/CartTest.php" afterDir="false" />
     </list>
@@ -22,40 +19,41 @@
     <session id="-2096524071">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="14" />
+          <entry key="php" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="14" />
+          <entry key="PHP" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="808" />
+          <entry key="php" value="847" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="808" />
+          <entry key="PHP" value="847" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/Cart/CartTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="138" column="68" lean-forward="true" selection-start-line="138" selection-start-column="68" selection-end-line="138" selection-end-column="68" />
+            <state relative-caret-position="3256">
+              <caret line="148" column="33" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
               <folding>
                 <element signature="e#68#99#0#PHP" expanded="true" />
               </folding>
@@ -82,10 +80,10 @@
         <option value="$PROJECT_DIR$/phpunit.xml.dist" />
         <option value="$PROJECT_DIR$/tests/Cart/ItemTest.php" />
         <option value="$PROJECT_DIR$/src/Cart/Item.php" />
-        <option value="$PROJECT_DIR$/src/Entity/Product.php" />
         <option value="$PROJECT_DIR$/src/Entity/Order.php" />
-        <option value="$PROJECT_DIR$/tests/Cart/CartTest.php" />
         <option value="$PROJECT_DIR$/src/Cart/Cart.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Product.php" />
+        <option value="$PROJECT_DIR$/tests/Cart/CartTest.php" />
       </list>
     </option>
   </component>
@@ -195,7 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.tests">
+  <component name="RunManager" selected="PHPUnit.CartTest.itClearsCartAfterCheckout">
     <configuration name="CartTest.itAddsTaxToProduct" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Recruitment\Tests\Cart\CartTest" file="$PROJECT_DIR$/tests/Cart/CartTest.php" method="itAddsTaxToProduct" scope="Method" />
       <method v="2" />
@@ -225,9 +223,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.tests" />
         <item itemvalue="PHPUnit.CartTest.itClearsCartAfterCheckout" />
         <item itemvalue="PHPUnit.CartTest.itAddsTaxToProduct" />
+        <item itemvalue="PHPUnit.tests" />
         <item itemvalue="PHPUnit.ProductTest" />
         <item itemvalue="PHPUnit.CartTest.removingNonExistentItemDoesNotRaiseException" />
       </list>
@@ -247,16 +245,11 @@
       <workItem from="1535816434893" duration="3193000" />
       <workItem from="1535820168547" duration="29469000" />
       <workItem from="1535959226927" duration="3226000" />
+      <workItem from="1535969837550" duration="391000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CartTest_itAddsTaxToProduct - 2018.09.03 at 09h 49m 39s.xml">
-      <configuration name="CartTest.itAddsTaxToProduct" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="CartTest_itAddsTaxToProduct - 2018.09.03 at 09h 49m 56s.xml">
-      <configuration name="CartTest.itAddsTaxToProduct" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="CartTest_itAddsTaxToProduct - 2018.09.03 at 09h 51m 18s.xml">
       <configuration name="CartTest.itAddsTaxToProduct" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -281,14 +274,20 @@
     <history-entry file="tests - 2018.09.03 at 10h 14m 05s.xml">
       <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="CartTest_itAddsTaxToProduct - 2018.09.03 at 12h 21m 00s.xml">
+      <configuration name="CartTest.itAddsTaxToProduct" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="CartTest_itClearsCartAfterCheckout - 2018.09.03 at 12h 22m 30s.xml">
+      <configuration name="CartTest.itClearsCartAfterCheckout" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40515000" />
+    <option name="totallyTimeSpent" value="40906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -400,6 +399,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cart/Cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1468">
+          <caret line="85" column="19" lean-forward="true" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Order.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -409,22 +415,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810">
+        <state relative-caret-position="-490">
           <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cart/Cart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="163" column="22" lean-forward="true" selection-start-line="163" selection-start-column="22" selection-end-line="163" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Cart/CartTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="138" column="68" lean-forward="true" selection-start-line="138" selection-start-column="68" selection-end-line="138" selection-end-column="68" />
+        <state relative-caret-position="3256">
+          <caret line="148" column="33" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
           <folding>
             <element signature="e#68#99#0#PHP" expanded="true" />
           </folding>

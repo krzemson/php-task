@@ -21,9 +21,9 @@ class Product
     public $minQuantity = 1;
     public $taxes = [
         '0%' => 1,
-        '5%' => 0.95,
-        '8%' => 0.92,
-        '23%' => 0.77
+        '5%' => 1.05,
+        '8%' => 1.08,
+        '23%' => 1.23
     ];
 
     public $tax;

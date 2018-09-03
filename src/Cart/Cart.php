@@ -85,7 +85,7 @@ class Cart
      * @param $index
      * @return Item
      */
-    public function getItem($index): Item
+    public function getItem(int $index): Item
     {
         if (isset($this->items[$index])) {
             return $this->items[$index];
