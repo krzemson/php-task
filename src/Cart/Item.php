@@ -54,6 +54,14 @@ class Item
     }
 
     /**
+     * @return float
+     */
+    public function getTotalPriceGross(): float
+    {
+        return $this->quantity * $this->product->getPriceGross();
+    }
+
+    /**
      * @param int $quantity
      * @throws QuantityTooLowException
      */

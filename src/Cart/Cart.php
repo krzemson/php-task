@@ -71,6 +71,16 @@ class Cart
         return $totalPrice;
     }
 
+    public function getTotalPriceGross(): float
+    {
+        $totalPrice = 0;
+        foreach ($this->items as $item) {
+            $totalPrice = $item->getTotalPriceGross() + $totalPrice;
+        }
+
+        return $totalPrice;
+    }
+
     /**
      * @param $index
      * @return Item
@@ -140,11 +150,12 @@ class Cart
             $newItems[] = [
                 'id' => $item->getProduct()->id,
                 'quantity' => $item->getQuantity(),
-                'total_price' => $item->getTotalPrice()
+                'tax' => array_search($item->getProduct()->tax, $item->getProduct()->taxes),
+                'total_price' => $item->getTotalPriceGross()
             ];
         }
 
-        $order = new Order($id, $newItems, $this->getTotalPrice());
+        $order = new Order($id, $newItems, $this->getTotalPriceGross());
 
         foreach ($this->items as $item) {
             $this->removeProduct($item->getProduct());

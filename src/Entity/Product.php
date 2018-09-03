@@ -19,12 +19,43 @@ class Product
     public $name;
     public $price;
     public $minQuantity = 1;
+    public $taxes = [
+        '0%' => 1,
+        '5%' => 0.95,
+        '8%' => 0.92,
+        '23%' => 0.77
+    ];
 
+    public $tax;
+
+    /**
+     * @param int $id
+     * @return Product
+     */
     public function setId(int $id): Product
     {
         $this->id = $id;
 
         return $this;
+    }
+
+    /**
+     * @param string $tax
+     * @return Product
+     */
+    public function setTax(string $tax): Product
+    {
+        $this->tax = $this->taxes[$tax];
+
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPriceGross(): float
+    {
+            return $this->price * $this->tax;
     }
 
     /**
